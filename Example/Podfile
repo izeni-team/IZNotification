@@ -1,0 +1,6 @@
+use_frameworks!
+target 'IZNotification_Tests' do
+  pod 'IZNotification', :path => '../'
+  
+  
+end

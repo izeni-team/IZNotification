@@ -1,0 +1,22 @@
+{
+  "name": "IZNotification",
+  "version": "0.1.0",
+  "summary": "A short description of IZNotification.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/IZNotification",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Taylor Allred": "tallred@izeni.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/IZNotification.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IZNotification/Classes/**/*"
+}

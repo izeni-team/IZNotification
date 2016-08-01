@@ -1,0 +1,6 @@
+framework module IZNotification {
+  umbrella header "IZNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

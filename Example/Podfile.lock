@@ -1,0 +1,16 @@
+PODS:
+  - IZNotification (0.1.0)
+
+DEPENDENCIES:
+  - IZNotification (from `../`)
+
+EXTERNAL SOURCES:
+  IZNotification:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IZNotification: 215e5ea79fcd568674a2e6ee615ac3062421c965
+
+PODFILE CHECKSUM: de514b2fecf4a21b3c8f871329fb961922c2cb91
+
+COCOAPODS: 1.0.1
