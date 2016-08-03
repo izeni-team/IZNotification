@@ -11,8 +11,8 @@
 		578F06DF91BDD111565CD726BD79323D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		834E3C6D3E852DE4A0A88C7F7CB134A1 /* Pods-IZNotification_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E71AECFC9A564BF2C4B2206E7C3A66 /* Pods-IZNotification_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DA99DE7D66E64E16E9404F4B66A9231 /* IZNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01725760E6D6DFF77829615FD12404C8 /* IZNotification-dummy.m */; };
-		B0DCDD00AC49F0EB0355794CEF24E0EA /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179569911168972831582F6F7624CECB /* ReplaceMe.swift */; };
 		B2D73401A57C949E46628AED9671B4C1 /* Pods-IZNotification_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D019B767516200452C5EFDE2F7D57296 /* Pods-IZNotification_Tests-dummy.m */; };
+		D49DBE491D5106AB00B1613A /* IZNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49DBE481D5106AB00B1613A /* IZNotification.swift */; };
 		F0D5BB74D061E77DA081A9FC565490E0 /* IZNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3484BA10DA688DD2E3CCFE6EEF4386C6 /* IZNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 		01725760E6D6DFF77829615FD12404C8 /* IZNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IZNotification-dummy.m"; sourceTree = "<group>"; };
 		03687F6D211268F1F33023499CE3E353 /* Pods-IZNotification_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IZNotification_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		10E71AECFC9A564BF2C4B2206E7C3A66 /* Pods-IZNotification_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IZNotification_Tests-umbrella.h"; sourceTree = "<group>"; };
-		179569911168972831582F6F7624CECB /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		2E1C1A606078C2765A4AE16F0845DF3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3484BA10DA688DD2E3CCFE6EEF4386C6 /* IZNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IZNotification-umbrella.h"; sourceTree = "<group>"; };
 		3EB99E2E820BE55FC8F354CD03ADC5E1 /* Pods-IZNotification_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IZNotification_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		C3BD1D9746A4348AEA3740C2ED2D6662 /* Pods_IZNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IZNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D019B767516200452C5EFDE2F7D57296 /* Pods-IZNotification_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IZNotification_Tests-dummy.m"; sourceTree = "<group>"; };
+		D49DBE481D5106AB00B1613A /* IZNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IZNotification.swift; sourceTree = "<group>"; };
 		D9E7D8AD798E69FADC193894CEC5DD27 /* IZNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IZNotification.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,7 +175,7 @@
 		D75812B80FE7F9FB1CBD3F438FA5993C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				179569911168972831582F6F7624CECB /* ReplaceMe.swift */,
+				D49DBE481D5106AB00B1613A /* IZNotification.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA99DE7D66E64E16E9404F4B66A9231 /* IZNotification-dummy.m in Sources */,
-				B0DCDD00AC49F0EB0355794CEF24E0EA /* ReplaceMe.swift in Sources */,
+				D49DBE491D5106AB00B1613A /* IZNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
