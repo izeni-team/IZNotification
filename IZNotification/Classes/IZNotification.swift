@@ -104,18 +104,18 @@ public class IZNotificationView: UIView {
             closeButton.setTitle(customizations.closeButtonText, forState: [])
             closeButton.titleLabel!.font = customizations.closeButtonFont
             closeButton.setTitleColor(customizations.closeButtonColor, forState: [])
-            closeButton.addTarget(self, action: "closeButtonTapped", forControlEvents: .TouchUpInside)
+            closeButton.addTarget(self, action: #selector(closeButtonTapped), forControlEvents: .TouchUpInside)
             backgroundView.contentView.addSubview(closeButton)
         }
         addSubview(backgroundView)
         
         if customizations.hideNotificationOnTap {
-            let tap = UITapGestureRecognizer(target: self, action: "tapped")
+            let tap = UITapGestureRecognizer(target: self, action: #selector(tapped))
             backgroundView.contentView.addGestureRecognizer(tap)
         }
         
         if customizations.hideNotificationOnSwipeUp {
-            let swipeAwayGesture = UISwipeGestureRecognizer(target: self, action: "closeButtonTapped")
+            let swipeAwayGesture = UISwipeGestureRecognizer(target: self, action: #selector(closeButtonTapped))
             swipeAwayGesture.direction = .Up
             backgroundView.contentView.addGestureRecognizer(swipeAwayGesture)
         }
@@ -357,7 +357,7 @@ public class IZNotification: NSObject {
             }, finished: {
                 notification.animating = false
                 self.durationTimer?.invalidate()
-                self.durationTimer = NSTimer.scheduledTimerWithTimeInterval(notification.duration, target: self, selector: "hideNotification:", userInfo: notification, repeats: false)
+                self.durationTimer = NSTimer.scheduledTimerWithTimeInterval(notification.duration, target: self, selector: #selector(self.hideNotification), userInfo: notification, repeats: false)
         })
     }
     
