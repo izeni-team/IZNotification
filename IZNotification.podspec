@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IZNotification'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of IZNotification.'
+  s.summary          = 'Library for push notifications.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This library makes handling push notifications much easier, when implemented it will tell whether to use a UILocalNotificiation, or a custom pushNotification that will drop down from the top of the screen, you can then interact with it.
                        DESC
 
   s.homepage         = 'https://github.com/izeni-team/IZNotification'
